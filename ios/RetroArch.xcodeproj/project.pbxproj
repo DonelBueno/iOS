@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9605EA9B170288EA001D47B0 /* RAModuleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9605EA9A170288EA001D47B0 /* RAModuleInfo.m */; };
-		962979F616C43B9500E6DCE0 /* ic_dir.png in Resources */ = {isa = PBXBuildFile; fileRef = 962979F416C43B9500E6DCE0 /* ic_dir.png */; };
-		962979F716C43B9500E6DCE0 /* ic_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 962979F516C43B9500E6DCE0 /* ic_file.png */; };
 		96297A0F16C5AEA100E6DCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96297A0E16C5AEA100E6DCE0 /* main.m */; };
-		96297A2716C82FF100E6DCE0 /* overlays in Resources */ = {isa = PBXBuildFile; fileRef = 96297A2616C82FF100E6DCE0 /* overlays */; };
 		96337E82176AC6E5004685F3 /* utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 96337E81176AC6E5004685F3 /* utility.m */; };
 		96337E84176AD5D9004685F3 /* browser.m in Sources */ = {isa = PBXBuildFile; fileRef = 96337E83176AD5D9004685F3 /* browser.m */; };
 		96337E86176AD6B6004685F3 /* settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 96337E85176AD6B6004685F3 /* settings.m */; };
@@ -35,18 +32,21 @@
 		96AFAE3816C1D4EA009DE44C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96AFAE3616C1D4EA009DE44C /* InfoPlist.strings */; };
 		96F9C28316FFA55F002455B3 /* RALogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F9C28216FFA55F002455B3 /* RALogView.m */; };
 		D48581DE16F823F9004BEB17 /* griffin.c in Sources */ = {isa = PBXBuildFile; fileRef = D48581DD16F823F9004BEB17 /* griffin.c */; };
+		DA997A4C177009C0007CB5A6 /* sinc_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = DA997A4A177009C0007CB5A6 /* sinc_neon.S */; };
+		DA997A4D177009C0007CB5A6 /* utils_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = DA997A4B177009C0007CB5A6 /* utils_neon.S */; };
+		DA997AE317700D70007CB5A6 /* overlays in Resources */ = {isa = PBXBuildFile; fileRef = DA997AE217700D70007CB5A6 /* overlays */; };
+		DA997AE617700D7D007CB5A6 /* ic_dir.png in Resources */ = {isa = PBXBuildFile; fileRef = DA997AE417700D7D007CB5A6 /* ic_dir.png */; };
+		DA997AE717700D7D007CB5A6 /* ic_file.png in Resources */ = {isa = PBXBuildFile; fileRef = DA997AE517700D7D007CB5A6 /* ic_file.png */; };
+		DA997AEA17700DA0007CB5A6 /* bitmap.bin in Resources */ = {isa = PBXBuildFile; fileRef = DA997AE817700DA0007CB5A6 /* bitmap.bin */; };
+		DA997AEB17700DA0007CB5A6 /* bitmap.bmp in Resources */ = {isa = PBXBuildFile; fileRef = DA997AE917700DA0007CB5A6 /* bitmap.bmp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9605EA99170288EA001D47B0 /* RAModuleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAModuleInfo.h; sourceTree = "<group>"; };
 		9605EA9A170288EA001D47B0 /* RAModuleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAModuleInfo.m; sourceTree = "<group>"; };
-		9614C71F16DDC018000B36EF /* RetroArch copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RetroArch copy-Info.plist"; path = "/Users/jason/Documents/Projects/ios/RetroArch/ios/RetroArch copy-Info.plist"; sourceTree = "<absolute>"; };
-		962979F416C43B9500E6DCE0 /* ic_dir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_dir.png; path = "../../android/phoenix/res/drawable-xhdpi/ic_dir.png"; sourceTree = "<group>"; };
-		962979F516C43B9500E6DCE0 /* ic_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_file.png; path = "../../android/phoenix/res/drawable-xhdpi/ic_file.png"; sourceTree = "<group>"; };
 		96297A0A16C5AD8D00E6DCE0 /* RetroArch_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetroArch_iOS.h; sourceTree = "<group>"; };
 		96297A0D16C5ADDA00E6DCE0 /* views.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = views.h; sourceTree = "<group>"; };
 		96297A0E16C5AEA100E6DCE0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		96297A2616C82FF100E6DCE0 /* overlays */ = {isa = PBXFileReference; lastKnownFileType = folder; name = overlays; path = ../../media/overlays; sourceTree = "<group>"; };
 		96337E81176AC6E5004685F3 /* utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utility.m; sourceTree = "<group>"; };
 		96337E83176AD5D9004685F3 /* browser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = browser.m; sourceTree = "<group>"; };
 		96337E85176AD6B6004685F3 /* settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settings.m; sourceTree = "<group>"; };
@@ -71,13 +71,16 @@
 		96AFAE3516C1D4EA009DE44C /* RetroArch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetroArch-Info.plist"; sourceTree = "<group>"; };
 		96AFAE3716C1D4EA009DE44C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96AFAE3B16C1D4EA009DE44C /* RetroArch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetroArch-Prefix.pch"; sourceTree = "<group>"; };
-		96AFAEF816C1DC73009DE44C /* sinc_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sinc_neon.S; sourceTree = "<group>"; };
-		96AFAEFF16C1DC73009DE44C /* utils_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = utils_neon.S; sourceTree = "<group>"; };
-		96AFAF4516C1E00A009DE44C /* bitmap.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = bitmap.bin; sourceTree = "<group>"; };
-		96AFAF4616C1E00A009DE44C /* bitmap.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bitmap.bmp; sourceTree = "<group>"; };
 		96C19C2616D455BE00FE8D5A /* rarch_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rarch_wrapper.h; sourceTree = "<group>"; };
 		96F9C28216FFA55F002455B3 /* RALogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALogView.m; sourceTree = "<group>"; };
 		D48581DD16F823F9004BEB17 /* griffin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = griffin.c; path = ../griffin/griffin.c; sourceTree = "<group>"; };
+		DA997A4A177009C0007CB5A6 /* sinc_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = sinc_neon.S; sourceTree = "<group>"; };
+		DA997A4B177009C0007CB5A6 /* utils_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = utils_neon.S; sourceTree = "<group>"; };
+		DA997AE217700D70007CB5A6 /* overlays */ = {isa = PBXFileReference; lastKnownFileType = folder; path = overlays; sourceTree = "<group>"; };
+		DA997AE417700D7D007CB5A6 /* ic_dir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_dir.png; sourceTree = "<group>"; };
+		DA997AE517700D7D007CB5A6 /* ic_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_file.png; sourceTree = "<group>"; };
+		DA997AE817700DA0007CB5A6 /* bitmap.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = bitmap.bin; sourceTree = "<group>"; };
+		DA997AE917700DA0007CB5A6 /* bitmap.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bitmap.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				967D647416E6EA04006BA1F2 /* modules */,
-				96297A2616C82FF100E6DCE0 /* overlays */,
+				DA997AE217700D70007CB5A6 /* overlays */,
 				966B9CB816E41E7A005B61E1 /* Default-568h@2x.png */,
 				966B9CB916E41E7A005B61E1 /* Default.png */,
 				966B9CBA16E41E7A005B61E1 /* Default@2x.png */,
-				962979F416C43B9500E6DCE0 /* ic_dir.png */,
-				962979F516C43B9500E6DCE0 /* ic_file.png */,
+				DA997AE417700D7D007CB5A6 /* ic_dir.png */,
+				DA997AE517700D7D007CB5A6 /* ic_file.png */,
 				967D646E16E45428006BA1F2 /* ic_pause.png */,
 				966B9CBB16E41E7A005B61E1 /* Icon-72.png */,
 				966B9CBC16E41E7A005B61E1 /* Icon.png */,
@@ -172,7 +175,6 @@
 		96AFAE3416C1D4EA009DE44C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9614C71F16DDC018000B36EF /* RetroArch copy-Info.plist */,
 				96AFAE3616C1D4EA009DE44C /* InfoPlist.strings */,
 				96AFAE3516C1D4EA009DE44C /* RetroArch-Info.plist */,
 				96AFAE3B16C1D4EA009DE44C /* RetroArch-Prefix.pch */,
@@ -194,8 +196,8 @@
 		96AFAEE516C1DC73009DE44C /* audio */ = {
 			isa = PBXGroup;
 			children = (
-				96AFAEF816C1DC73009DE44C /* sinc_neon.S */,
-				96AFAEFF16C1DC73009DE44C /* utils_neon.S */,
+				DA997A4A177009C0007CB5A6 /* sinc_neon.S */,
+				DA997A4B177009C0007CB5A6 /* utils_neon.S */,
 			);
 			name = audio;
 			path = ../audio;
@@ -213,8 +215,8 @@
 		96AFAF4416C1E00A009DE44C /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				96AFAF4516C1E00A009DE44C /* bitmap.bin */,
-				96AFAF4616C1E00A009DE44C /* bitmap.bmp */,
+				DA997AE817700DA0007CB5A6 /* bitmap.bin */,
+				DA997AE917700DA0007CB5A6 /* bitmap.bmp */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -278,10 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96297A2716C82FF100E6DCE0 /* overlays in Resources */,
 				96AFAE3816C1D4EA009DE44C /* InfoPlist.strings in Resources */,
-				962979F616C43B9500E6DCE0 /* ic_dir.png in Resources */,
-				962979F716C43B9500E6DCE0 /* ic_file.png in Resources */,
 				966B9CBD16E41E7A005B61E1 /* Default-568h@2x.png in Resources */,
 				966B9CBF16E41E7A005B61E1 /* Default.png in Resources */,
 				966B9CC116E41E7A005B61E1 /* Default@2x.png in Resources */,
@@ -291,6 +290,11 @@
 				966B9CCB16E41EC1005B61E1 /* PauseIndicatorView.xib in Resources */,
 				967D646F16E45428006BA1F2 /* ic_pause.png in Resources */,
 				967D647516E6EA04006BA1F2 /* modules in Resources */,
+				DA997AE317700D70007CB5A6 /* overlays in Resources */,
+				DA997AE617700D7D007CB5A6 /* ic_dir.png in Resources */,
+				DA997AE717700D7D007CB5A6 /* ic_file.png in Resources */,
+				DA997AEA17700DA0007CB5A6 /* bitmap.bin in Resources */,
+				DA997AEB17700DA0007CB5A6 /* bitmap.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,8 @@
 				96337E82176AC6E5004685F3 /* utility.m in Sources */,
 				96337E84176AD5D9004685F3 /* browser.m in Sources */,
 				96337E86176AD6B6004685F3 /* settings.m in Sources */,
+				DA997A4C177009C0007CB5A6 /* sinc_neon.S in Sources */,
+				DA997A4D177009C0007CB5A6 /* utils_neon.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +341,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -378,6 +384,8 @@
 					"-DWANT_MINIZ",
 					"-DSINC_LOWER_QUALITY",
 				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,8 +400,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -429,6 +437,8 @@
 					"-DWANT_MINIZ",
 					"-DSINC_LOWER_QUALITY",
 				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -484,8 +494,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libstdc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetroArch/RetroArch-Prefix.pch";
