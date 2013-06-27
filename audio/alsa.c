@@ -39,8 +39,9 @@ static bool alsa_use_float(void *data)
    return alsa->has_float;
 }
 
-static bool find_float_format(snd_pcm_t *pcm, snd_pcm_hw_params_t *params)
+static bool find_float_format(snd_pcm_t *pcm, void *data)
 {
+   snd_pcm_hw_params_t *params = (snd_pcm_hw_params_t*)data;
    if (snd_pcm_hw_params_test_format(pcm, params, SND_PCM_FORMAT_FLOAT) == 0)
    {
       RARCH_LOG("ALSA: Using floating point format.\n");
@@ -59,18 +60,18 @@ static void *alsa_init(const char *device, unsigned rate, unsigned latency)
    snd_pcm_hw_params_t *params = NULL;
    snd_pcm_sw_params_t *sw_params = NULL;
 
+   unsigned latency_usec = latency * 1000;
+   unsigned channels = 2;
+   unsigned periods = 4;
+   snd_pcm_format_t format;
+
    const char *alsa_dev = "default";
    if (device)
       alsa_dev = device;
 
-   unsigned latency_usec = latency * 1000;
-   unsigned channels = 2;
-   unsigned periods = 4;
    snd_pcm_uframes_t buffer_size;
-   snd_pcm_format_t format;
 
    TRY_ALSA(snd_pcm_open(&alsa->pcm, alsa_dev, SND_PCM_STREAM_PLAYBACK, SND_PCM_NONBLOCK));
-
    TRY_ALSA(snd_pcm_hw_params_malloc(&params));
    alsa->has_float = find_float_format(alsa->pcm, params);
    format = alsa->has_float ? SND_PCM_FORMAT_FLOAT : SND_PCM_FORMAT_S16;
@@ -283,4 +284,3 @@ const audio_driver_t audio_alsa = {
    alsa_write_avail,
    alsa_buffer_size,
 };
-

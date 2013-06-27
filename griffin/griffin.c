@@ -86,6 +86,10 @@ CONFIG FILE
 #include "../conf/config_file.c"
 #include "../core_options.c"
 
+#if defined(__QNX__) || defined(IOS)
+#include "../core_info.c"
+#endif
+
 /*============================================================
 CHEATS
 ============================================================ */
@@ -260,6 +264,7 @@ INPUT
 #include "../ios/RetroArch/input/BTStack/btpad.c"
 #include "../ios/RetroArch/input/BTStack/btpad_ps3.c"
 #include "../ios/RetroArch/input/BTStack/btpad_wii.c"
+#include "../ios/RetroArch/input/BTStack/btpad_queue.c"
 #elif defined(__BLACKBERRY_QNX__)
 #include "../blackberry-qnx/qnx_input.c"
 #endif
@@ -325,6 +330,15 @@ AUDIO
 
 #ifdef HAVE_SL
 #include "../audio/opensl.c"
+#endif
+
+#ifdef HAVE_ALSA
+#ifdef __QNX__
+#include "../blackberry-qnx/alsa_qsa.c"
+#else
+#include "../audio/alsa.c"
+#include "../audio/alsathread.c"
+#endif
 #endif
 
 #ifdef HAVE_AL
